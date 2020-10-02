@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Divisas</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="text/css" href="img/world.png">
+	<!-- Bootstrap css-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<script type="text/javascript">
+		function cal(){
+			//obtiene la cantidad
+			var dato = document.getElementById("monto").value;
+			//obtiene el tipo de divisa a convertir del radiobutton
+			var radioB = document.getElementsByName("divisa");
+			//obtiene los checkboxes
+			var checkB = document.getElementsByName('divisaC[]');
+			var cont = 0;
+			var checkA = [];
+
+			//operaciones segun el tipo de cambio
+			var resultPaD = (dato * 0.046);
+			var resultPaE = (dato * 0.038);
+			var resultDaP = (dato * 21.89);
+			var resultDaE = (dato * 0.84);
+			var resultEaP = (dato * 26.16);
+			var resultEaD = (dato * 1.19);
+
+			//para recorrer los botones de radio
+			for(var i=0; i<radioB.length; i++){
+				if (radioB[i].checked == true) {
+					var radioChecked = radioB[i].value;
+					//alert(radioChecked);
+				}
+			}
+
+			var frase = dato + " " + radioChecked + ": ";
+
+			//para recorrer los checkboxes
+			for(var x=0; x<checkB.length; x++){
+				if(checkB[x].checked == true){
+					var cbChecked = checkB[x].value;
+
+					//agregar cada elemento seleccionado a un arreglo
+					checkA.push(cbChecked);
+					console.log(checkA); //checamos la posición de los elementos seleccionados para corroborar
+					//alert(cbChecked);
+				}
+			}
+
+			//mostrar resultado en textarea según selección del usuario
+			if (radioChecked == "Pesos") {
+				if (checkA[0] == "Dólares" && checkA[1] == "Euros"){
+					document.getElementById("total").innerHTML = frase + resultPaD + " Dólares, " + resultPaE + " Euros";
+				} else if (cbChecked == "Dólares" ) {
+					document.getElementById("total").innerHTML = frase + resultPaD + " Dólares.";
+				} else if (cbChecked == "Euros") {
+					document.getElementById("total").innerHTML = frase + resultPaE + " Euros.";
+				}
+			}
+			
+			if (radioChecked == "Dólares") {
+				if (checkA[0] == "Pesos" && checkA[1] == "Euros"){
+					document.getElementById("total").innerHTML = frase + resultDaP + " Pesos, " + resultDaE + " Euros";
+				} else if (cbChecked == "Pesos" ) {
+					document.getElementById("total").innerHTML = frase + resultDaP + " Pesos.";
+				} else if (cbChecked == "Euros") {
+					document.getElementById("total").innerHTML = frase + resultDaE + " Euros.";
+				}
+			}
+
+			if (radioChecked == "Euros") {
+				if (checkA[0] == "Pesos" && checkA[1] == "Dólares"){
+					document.getElementById("total").innerHTML = frase + resultEaP + " Pesos, " + resultEaD + " Dólares";
+				} else if (cbChecked == "Pesos" ) {
+					document.getElementById("total").innerHTML = frase + resultEaP + " Pesos.";
+				} else if (cbChecked == "Dólares") {
+					document.getElementById("total").innerHTML = frase + resultEaD + " Dólares.";
+				}
+			}
+
+			document.getElementById("pesoC").checked = false;
+			document.getElementById("dolarC").checked = false;
+			document.getElementById("euroC").checked = false;
+		}
+
+		function deshabilitarP(){
+			 document.getElementById("pesoC").disabled = true;
+			 document.getElementById("dolarC").disabled = false;
+			 document.getElementById("euroC").disabled = false;
+		}
+
+		function deshabilitarD(){
+			document.getElementById("pesoC").disabled = false;
+			document.getElementById("dolarC").disabled = true;
+			document.getElementById("euroC").disabled = false;
+		}
+
+		function deshabilitarE(){
+			document.getElementById("pesoC").disabled = false;
+			document.getElementById("dolarC").disabled = false;
+			document.getElementById("euroC").disabled = true;
+		}
+	</script>
+</head>
+
+<body>
+	<a class="btn btn-secondary my-2" href="portafolio.html">Regresar</a>
+
+	<div class="container text-center">
+		<form id="formD">
+			<h1>Convertidor de divisas</h1>
+			<h3>Cantidad:</h3>
+			<input type="text" name="monto" placeholder="monto en número" id="monto"><br>
+
+			<input type="radio" id="pesoR" name="divisa" value="Pesos" onClick="deshabilitarP()">
+			<label for="pesoR">Pesos</label>
+			<input type="radio" id="dolarR" name="divisa" value="Dólares" onClick="deshabilitarD()">
+			<label for="dolarR">Dólares</label>
+			<input type="radio" id="euroR" name="divisa" value="Euros" onClick="deshabilitarE()">
+			<label for="euroR">Euros</label><br>
+
+			<td>Convertir a:</td>
+			<input type="checkbox" id="pesoC" name="divisaC[]" value="Pesos">
+			<label for="pesoC">Pesos</label>
+			<input type="checkbox" id="dolarC" name="divisaC[]" value="Dólares">
+			<label for="dolarC">Dólares</label>
+			<input type="checkbox" id="euroC" name="divisaC[]" value="Euros">
+			<label for="euroC">Euros</label><br>
+			<button type="button" class="btn btn-sm btn-outline-secondary" name="calcular" id="calcular" onClick="cal()">Calcular</button><br>
+
+			<label for="total">Resultado</label><br>
+			<textarea id="total" name="Resultado" rows="3" cols="50" disabled="true"></textarea>
+		</form>	
+	</div>
+
+</body>
+</html>

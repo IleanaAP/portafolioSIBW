@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="icon" type="text/css" href="img/calculator.png">
+	<meta  charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script type="text/javascript">
+		function suma(){
+			var n1 = document.getElementById("prim").value;
+			var n2 = document.getElementById("seg").value;
+			alert("La suma es: " + (parseInt(n1) + parseInt(n2)));
+		}
+		function resta(){
+			var n1 = document.getElementById("prim").value;
+			var n2 = document.getElementById("seg").value;
+			alert("La resta es: " + (n1 - n2));
+		}
+		function multi(){
+			var n1 = document.getElementById("prim").value;
+			var n2 = document.getElementById("seg").value;
+			alert("La multiplicación es: " + (n1 * n2));
+		}
+		function div(){
+			var n1 = document.getElementById("prim").value;
+			var n2 = document.getElementById("seg").value;
+			alert("La división es: " + (n1 / n2));
+		}
+	</script>
+</head>
+<body class="body4">
+	<a href="portafolio.html">Regresar</a>
+	<form>
+		<table border="1" align="center" width="90%" height="90%" bgcolor="#FFFFFF">
+			<caption class="title" style="font-size:200%;">CALCULADORA BÁSICA</caption>
+			<tr><td align="center" style="font-size:200%;">Escribe un número:</td>
+				<td><input type="text" name="prim" id="prim" style="width: 700px; height: 150px; font-size: 500%; text-align: center;"></td>
+			</tr>
+			<tr><td align="center" style="font-size:200%;">Escribe otro número:</td>
+				<td><input type="text" name="seg" id="seg" style="width: 700px; height: 150px; font-size: 500%; text-align: center; "></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div style="text-align: right; width: 900px">
+						<button name="bt1" type="submit" onclick="suma()" style="font-size:200%;">Suma</button>
+						<button name="bt2" type="submit" onclick="resta()" style="font-size:200%;">Resta</button>
+						<button name="bt3" type="submit" onclick="multi()" style="font-size:200%;">Multiplicación</button>
+						<button name="bt4" type="submit" onclick="div()" style="font-size:200%;">División</button>
+					</div>
+					
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>

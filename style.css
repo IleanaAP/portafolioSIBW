@@ -1,0 +1,72 @@
+.body1 {
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+.body2 {
+	text-align: center;
+	background-color: #F4F4F4;
+}
+
+.body3 {
+	text-align: center;
+	background-color: #F6F6F6;
+}
+
+.body4 {
+	text-align: center;
+	background-color: #F6F6F6;
+}
+
+.body5 {
+	text-align: center;
+}
+
+table, th, td {
+	text-align: center;
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+
+h1 {
+	text-align: center;
+}
+
+#tp {
+	border-collapse: collapse;
+}
+
+li {
+	list-style: none;
+}
+
+#nombre {
+	background-color: #46B2B2;
+	color: #FFFFFF;
+}
+
+#educacion {
+	background-color: #1E2460;
+	color: #FFFFFF;
+}
+
+#cicese {
+	background-color: #74C2F7;
+}
+
+#intercambio {
+	background-color: #CC0605;
+	color: #FFFFFF;
+}
+
+#pasatiempos {
+	background-color: #FAD201;
+	color: #FFFFFF;
+}
+
+#divisas {
+	text-align: center;
+	margin: 0 auto;
+}

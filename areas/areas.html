@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Áreas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--esto es para que sea responsivo en celulares -->
+	<!-- Bootstrap css-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="icon" type="text/css" href="img/cone.png">
+</head>
+
+<body>
+	<!--Menú principal -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="areas.html">Áreas</a>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="areas.html">Inicio<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="areas.html#aprende" id="dropdownAprende" data-toggle="dropdown" aria-expanded="false">Aprende</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownAprende">
+						<a class="dropdown-item" href="areas.html#rectangulo">Rectángulo</a>
+						<a class="dropdown-item" href="areas.html#triangulo">Triángulo</a>
+						<a class="dropdown-item" href="areas.html#circulo">Círculo</a>
+					</div>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="areas.html#practica">Practica</a>
+				</li>
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="portafolio.html" id="dropdownPortafolio" data-toggle="dropdown" aria-expanded="false">Portafolio</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownPortafolio">
+						<a class="dropdown-item" href="../portafolio.html">General</a>
+						<a class="dropdown-item" href="../calculadora.html">Calculadora</a>
+						<a class="dropdown-item" href="../divisas.html">Divisas</a>
+						<a class="dropdown-item" href="../film.html">FilmSo</a>
+						<a class="dropdown-item" href="../personal2.html">Página personal</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--Banner inicial -->
+	<main role="main" class="container">
+		<div class="jumbotron p-4 p-md-5 text-center rounded bg-warning">
+			<div class="container">
+				<br><br><br>
+				<h1>Aprende a obtener el área de figuras</h1>
+				<p>La página donde aprenderás a cómo obtener el área de tres figuras geométricas: rectángulo, triángulo y círculo.</p>
+			</div>
+		</div>
+
+		<!-- Sección de aprendizaje -->
+		<!-- Para rectángulo -->
+		<div class="container">
+			<h2 id="rectangulo">Área de un rectángulo</h2>
+			<p>
+				<img src="img/rectangulo-area.jpg" width="200" height="150" style="float: left; margin-right: 30px; display: block;" alt="Dibujo de un rectángulo para calcular su área">
+			</p>
+			<p>El <strong>área</strong> de un <em>rectángulo</em> se calcula a partir de los dos lados diferentes (<em>a</em> y <em>b</em>). Es el producto o multiplicación de los dos lados juntos del rectángulo.</p>
+			<div style="text-align: center; margin-left: auto; margin-right: auto;">
+				<p>Área = a * b</p>
+				<p>siendo <em>a</em> y <em>b</em> los dos lados diferentes</p>
+			</div>
+			<p>Esta <strong>fórmula</strong> también podría obtenerse de la fórmula del área del paralelogramo, pero por ahorita no la veremos. Si la <strong>base</strong> del rectángulo es uno de sus lados (en este caso <em>b</em>, la <strong>altura relativa a la base</strong> será el lado <em>a</em>, y aplicandola fórmula anterior obtendríamos la del <strong>área del rectángulo</strong>.</p>
+			<br>
+			<h3>Ejemplo</h3>
+			<p>
+				<img src="img/ejemplo-rectangulo-area.jpg" width="300" height="150" style="float: right; margin-left: 20px;display: block;" alt="Dibujo de un rectángulo con medidas de a=3cm y b=5cm">
+			</p>
+			<p>Sea un rectángulo cuyos lados son iguales dos a dos de longitud <em>a</em> = 3 cm. y <em>b</em> = 5 cm.</p>
+			<p>El <strong>área</strong> del rectángulo será el producto de los dos lados diferentes, es decir:</p>
+			<div style="text-align: center; margin-left: auto; margin-right: auto;">
+				<p>Área = <em>a * b</em> = 3 * 5 = 15 cm<sup>2</sup></p>
+			</div>
+			<p>El <strong>área del rectángulo</strong> de lados <em>a</em> = 3 cm. y <em>b</em> = 5 cm. es de <strong>15 cm<sup>2</sup>.</strong></p>
+			<br>
+			<div>
+				<p>Información obtenida de <a href="https://www.universoformulas.com/matematicas/geometria/area-rectangulo/" target="_blank">Universo Fórmulas: Área de un rectángulo</a>.</p>
+			</div>
+		</div>
+
+		<!-- Para triángulo -->
+		<div class="container">
+			<h2 id="triangulo">Área de un triángulo</h2>
+			<p>El <strong>área</strong> de un <em>triángulo</em> se calcula por diferentes procedimientos según el tipo de triángulo de que se trate o de los elementos que se conozcan de ese triángulo. Aquí veremos la <strong>fórmula general</strong> para calcular el <strong>área</strong> de un triángulo.</p>
+			<p>La <strong>fórmula general</strong> para calcular el área de un triángulo es:</p>
+			<div style="text-align: center; margin-left: auto; margin-right: auto;">
+				<p>Área = (<em>b</em> * <em>h</em>) / 2</p>
+				<p>donde <em>b</em> es la base y <em>h</em> es la altura</p>
+			</div>
+			<p>Esta fórmula se utiliza cuando se conocen las medidas de un lado (<em>b</em>) y la altura (<em>h</em>) asociada a dicho lado. Ese lado ejerce como base.</p>
+			<br>
+			<h3>Ejemplo</h3>
+			<p>
+				<img src="img/ejemplo-triangulo-rectangulo-area.jpg" width="250" height="160" style="float: right;margin-left: 20px; display: block;" alt="Ejemplo de triángulo rectángulo con medidas de b = 4cm., a = 3cm. y un ángulo de 90 grados.">
+			</p>
+			<p>Sea un <strong>triángulo rectángulo</strong> con los lados que forman el ángulo recto (<em>a</em> y <em>b</em>) conocidos, siendo <em>a</em> = 3 cm. y <em>b</em> = 4 cm.</p>
+			<p>¿Cuál es su <strong>área</strong>?</p>
+			<p>Aplicamos la fórmula general:</p>
+			<div style="text-align: center; margin-left: auto; margin-right: auto;">
+				<p>Área = (<em>b * a</em>) / 2 = (4 * 3) / 2 = 12 / 2 = 6 cm<sup>2</sup></p>
+			</div>
+			<p>Y se obtiene que su área es de <strong>6 cm<sup>2</sup></strong>.</p>
+			<br>
+			<div>
+				<p>Información obtenida de <a href="https://www.universoformulas.com/matematicas/geometria/area-triangulo/" target="_blank">Universo Fórumlas: Área de un triángulo</a>.</p>
+			</div>
+		</div>
+
+		<!-- Para círculo -->
+		<div class="container">
+			<h2 id="circulo">Área de un círculo</h2>
+			<p>
+				<img src="img/circulo-area.jpg" width="190" height="189" style="float: left; margin-right: 20px; display: block;" alt="Dibujo del área de un círculo">
+			</p>
+			<p>El <strong>área</strong> de un <em>círculo</em> es igual al producto o multiplación de <strong>π</strong> (pi) por el radio (<em>r</em>) al cuadrado.</p>
+			<div style="text-align: center; margin-left: auto; margin-right: auto;">
+				<p>Área = π * r<sup>2</sup> = π * (D<sup>2</sup> / 4)</p>
+				<p>siendo <em>r</em> el radio y <em>D</em> el diámetro del círculo</p>
+			</div>
+			<p>También se puede calcular el <strong>área</strong> conociendo el diámetro del círculo (<em>D</em>), ya que éste es el doble del radio.</p>
+			<p>Como un círculo es un polígono regular de infinitos lados, podemos aplicarla fórmula general del área del polígono regular:</p>
+			<div style="text-align: center; margin-left: auto; margin-right: auto;">
+				<p>Área = (Perímetro * apotema) / 2 =</p>
+				<p>= (2 * π * r)* r / 2 = (2 * π * r<sup>2</sup>) / 2 = π * r<sup>2</sup></p>
+			</div>
+			<h3>Ejemplos</h3>
+			<h4>Círculo y su radio</h4>
+			<p>
+				<img src="img/ejemplo-circulo-area-radio.jpg" width="193" height="187" style="float: right; margin-left: 20px; display: block;" alt="Dibujo de un círculo con un radio de 2 cm.">
+			</p>
+			<p>Sea un <em>círculo</em> de radio conocido, siendo éste r = 2 cm.</p>
+			<p>Aplicamos la fórmula anterior:</p>
+			<div style="text-align: center; margin-left: auto; margin-right: auto;">
+				<p>Área = π * r<sup>2</sup> = π * 2<sup>2</sup> = 12.57 cm<sup>2</sup></p>
+			</div>
+			<p>Y se obtiene que el área de un círculo de radio 2 cm. es de <strong>12.57 cm<sup>2</sup></strong>.</p>
+			<h4>Círculo y su diámetro</h4>
+			<p>
+				<img src="img/ejemplo-circulo-area-diametro.jpg" width="186" height="186" style="float: left; margin-right: 20px; display: block;" alt="Dibujo de un círculo con un diámetro de 5 cm.">
+			</p>
+			<p>Ahora supongamos que tenemos un <strong>círculo</strong> de diámetro conocido <em>D</em> = 5 cm.</p>
+			<p>¿Cuál es su <strong>área</strong>?</p>
+			<div style="text-align: center; margin-left: auto; margin-right: auto;">
+				<p>Área = π * (D<sup>2</sup> / 4) = π * (5<sup>2</sup> / 4) = 19.63 cm<sup>2</sup></p>
+			</div>
+			<p>En este caso, el área de un círculo de diámetro 5 cm. es de <strong>19.63 cm<sup>2</sup></strong>.</p>
+			<div>
+				<p>Información obtenida de <a href="https://www.universoformulas.com/matematicas/geometria/area-circulo/" target="_blank">Universo Fórmulas: Área de un círculo</a>.</p>
+			</div>
+		</div>
+	</main>
+
+	<div class="container">
+		<br>
+		<h3 id="practica">¡Practica y aprende!</h3>
+		<p>Aquí tienes una calculadora que te ayudará a obtener el área de estas tres figuras: rectángulo, triángulo y círculo.</p>
+		<form action="areas.php" method="POST">
+			<div class="form-group">
+				<h4>ÁREA DE UN RECTÁNGULO</h4>
+				<label>Altura/lado a: </label><input type="number" name="alturaR"><br>
+				<label>Base/lado b: </label><input type="number" name="baseR"><br>
+				<input type="submit" class="btn btn-primary" name="btn1" value="Calcular" onclick="rectangulo();">
+			</div>
+			<br>
+			<div class="form-group">
+				<h4>ÁREA DE UN TRIÁNGULO</h4>
+				<label>Altura del triángulo: </label><input type="number" name="alturaT"><br>
+				<label>Base del triángulo: </label><input type="number" name="baseT"><br>
+				<input type="submit" class="btn btn-primary" name="btn2" value="Calcular">
+			</div>
+			<br>
+			<div class="form-group">
+				<h4>ÁREA DE UN CÍRCULO</h4>
+				<label>Radio: </label><input type="number" name="radio"><br>
+				<input type="submit" class="btn btn-primary" name="btn3" value="Calcular">
+			</div>
+			<div class="form-group">
+				<label>Diámetro: </label><input type="number" name="diametro"><br>
+				<input type="submit" class="btn btn-primary" name="btn4" value="Calcular">
+			</div>
+		</form>
+	</div>
+
+	<footer class="container">
+		<p>© Ileana Aguilar 2020</p>
+	</footer>
+
+	<!--JavaScript opcional - primero va el jQuery, luego Popper.js y por último Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
